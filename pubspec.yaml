@@ -1,0 +1,36 @@
+name: sougou
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.5.3 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
+  intl: ^0.20.2  # ✅ 最新バージョンに更新
+  table_calendar: ^3.2.0
+  path_provider: ^2.1.2  # ✅ 追加（ファイル保存用）
+  sqflite: ^2.3.0  # ✅ 追加（SQLite 用）
+  path: ^1.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"  # ここにアイコンのパスを指定
+  adaptive_icon_background: "#ffffff"  # Android 用の背景色
+  adaptive_icon_foreground: "assets/app_icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/app_icon.png
